@@ -162,7 +162,7 @@ function Background() {
       setcurrenticons((prevIndex) =>
         (prevIndex + 1) % icons.length
       );
-    }, 3500); // Adjust the interval as needed (3000ms = 3 seconds)
+    }, 2500); // Adjust the interval as needed (3000ms = 3 seconds)
 
     return () => clearInterval(interval);
   }, []);

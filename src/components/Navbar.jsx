@@ -19,9 +19,9 @@ function Navbar() {
         
       </ul>
       <form >
-      <div className='mx-5'>
-        <Link to="about" offset={100}><button className='btn btn-outline-dark'>About <i className="fa-regular fa-address-card"></i></button></Link>
-
+      <div className=''>
+        <Link to="about" offset={100}><button className='btn btn-lg btn-outline-secondary'>About <i className="fa-regular fa-address-card"></i></button></Link>
+        <Link to="skill" offset={100}><button className='btn btn-lg btn-outline-secondary mx-2'>Skills <i className="fa-solid fa-graduation-cap"></i></button></Link>
       </div></form>
     </div>
   </div>
