@@ -73,7 +73,7 @@ function AboutMe() {
                     }}>
                         <div>
                             <h2>About Me <i className="fa-regular fa-address-card"></i></h2>
-                            <p style={{fontFamily:"fantasy",background:"#f8f8f842"}}>
+                            <p style={{fontFamily:"fantasy",background:"#f8f8f842",fontSize:'large'}}>
                                 {/* Hey! there this is Akshit Tomar , a B-Tech Computer Science student at Graphic Era University, Dehradun.Presently I am in my 4th year. I have been working over MERN stack integrated with CI/CD pipelines . My major project is Office-Boy. I have made 8+ live deployed projects over MERN and React JS. I am weel versed with Azure Devops and Azure Application Service . I am active problem solver at Leetcode and I am proficient in Data Structures and Algorithms using JAVA.<br/>Thank You! */}
                                 
 

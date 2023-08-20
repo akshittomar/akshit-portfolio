@@ -14,7 +14,7 @@ function Skills() {
                             objectFit: "", alignItems: ""
                         }}>
                             <div>
-                            <h1>My Skills</h1>
+                            <h1>My Skills <i className="fa-solid fa-graduation-cap"></i></h1>
                             <div className=''>
                             <SkillItem skillName="React" skillLevel={90} name="fa-brands fa-react fa-spin" />
                             <SkillItem skillName="JavaScript" skillLevel={85} name="fa-brands fa-square-js " />
