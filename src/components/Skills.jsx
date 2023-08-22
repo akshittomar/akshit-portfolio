@@ -4,17 +4,17 @@ import './skill.css'
 function Skills() {
     return (
         <>
-            <div className="ski" id='skill' >
+            <div className="ski " id='skill' >
                 <div className="sc" style={{ backgroundColor: "", padding: "20px" }} >
-                    <div className="dc" style={{ maxWidth: "1200px", margin: "0 auto" }} >
-                        <div className="ac" style={{
+                    <div className="dc my-5" style={{ maxWidth: "1200px", margin: "0 auto" }} >
+                        <div className="ac " style={{
                             width: "",
                             height: "",
                             borderRadius: '', display: "", alignContent: "",
                             objectFit: "", alignItems: ""
                         }}>
-                            <div>
-                            <h1>My Skills <i className="fa-solid fa-graduation-cap"></i></h1>
+                            <div className=''>
+                            <h1 className=''>My Skills <i className="fa-solid fa-graduation-cap "></i></h1>
                             <div className=''>
                             <SkillItem skillName="React" skillLevel={90} name="fa-brands fa-react fa-spin" />
                             <SkillItem skillName="JavaScript" skillLevel={85} name="fa-brands fa-square-js " />

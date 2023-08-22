@@ -141,6 +141,7 @@ function Background() {
     'REACT DEVELOPER',
     'AZURE DEVOPS ',
     'BACKEND DEVELOPER',
+    'UI DESIGNER'
   ];
   const icons = [
     "fa-solid fa-laptop ",
@@ -149,7 +150,7 @@ function Background() {
     'fa-brands fa-microsoft ',
     
     "fa-brands fa-node-js ",
-  ];
+    "fa-solid fa-palette",]
 
 
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);

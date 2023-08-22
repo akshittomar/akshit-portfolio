@@ -28,35 +28,42 @@ const projects = [
         description: 'Office-Boy backend deployed on render.com and cloud storage is provided my MongoDB Atlas. I have used JWT authentication to secure user Login/Sign Up.',
         tag:"Backend",
         link:"https://office-boy-backend.onrender.com/home",
-        link2:"",
+        
         
     },
     {
-        name: 'Project 2',
-        
-        imageSrc: './imgg.jpg',
-        techniques: ['Node.js', 'Express', 'MongoDB'],
-        description: 'This project does...',
+        name: 'My-Notes Backend',
+        imageSrc: 'src/components/notesback.jpg',
+        techniques: ['Node.js', 'Express', 'MongoDB Atlas','Auth0 Authentication','Google API Services'],
+        description: 'My-Notes Backend used to perform all CRUD operations over user notes.User is authenticated using Google Auth0 API services.',
+        tag:"Backend",
+        link:"https://my-notes-backend-wwql.onrender.com/home"
     },
     {
-        name: 'Project 2',
-        imageSrc: './imgg.jpg',
-        techniques: ['Node.js', 'Express', 'MongoDB'],
-        description: 'This project does...',
+        name: 'News-Room',
+        git:"true",
+        imageSrc: 'src/components/news.jpg',
+        techniques: ['React Js','News Api','Bootstrap'],
+        description: 'News-Room fetches News API to show 7 countries news under different categories like Sports , Technology , Science ,etc.',
+        link:"https://github.com/akshittomar/newsroom",
+        tag:"Frontend"
     },
     {
-        name: 'Project 2',
-        imageSrc: './imgg.jpg',
-        techniques: ['Node.js', 'Express', 'MongoDB'],
-        description: 'This project does...',
+        name: 'Portfolio Website',
+        imageSrc: 'src/components/portfolio.jpg',
+        techniques: ['React JS','Bootstrap','Azure App Services'],
+        description: 'Elevating the future via my skills, impactful projects, and dynamic portfolio.',
+        width:"65%",
+        tag:"Frontend",
+        link:"akshit-tomar.azurewebsites.net"
     },
     // Add more projects as needed
 ];
 
 const Projects = () => {
     return (
-        <div className="container pro">
-            <h1 className="my-4">Live Deployed Projects</h1>
+        <div className="container pro" id='project'>
+            <h1 className="my-4">Live Deployed Projects <i className="fa-solid fa-award"></i></h1>
             <div className='row' style={{justifyContent:"space-between", alignItems:"center"}}>
             {projects.map((project, index) => (
                 <div className=" mb-4" key={index} style={{width:"39%"}}>
@@ -69,7 +76,7 @@ const Projects = () => {
                         />
                     </div>
                     <div className="col-md-10">
-                        <h6>{project.name} <a href={project.link}><i style={{color:"grey"}} className="fa-solid fa-sm fa-arrow-up-right-from-square"></i></a></h6>({project.tag})<br/><strong>Technologies Used:</strong>
+                        <h6>{project.name} <a href={project.link}><i style={{color:"black"}} className={project.git==="true"?"fa-brands fa-square-github fa-beat":"fa-solid fa-sm fa-beat fa-arrow-up-right-from-square"}></i></a></h6>({project.tag})<br/><strong>Technologies Used:</strong>
                         <ul className="list-inline">
                             {project.techniques.map((technique, index) => (
                                 <li key={index} className="list-inline-item">

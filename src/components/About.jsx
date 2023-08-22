@@ -77,7 +77,7 @@ function AboutMe() {
                                 {/* Hey! there this is Akshit Tomar , a B-Tech Computer Science student at Graphic Era University, Dehradun.Presently I am in my 4th year. I have been working over MERN stack integrated with CI/CD pipelines . My major project is Office-Boy. I have made 8+ live deployed projects over MERN and React JS. I am weel versed with Azure Devops and Azure Application Service . I am active problem solver at Leetcode and I am proficient in Data Structures and Algorithms using JAVA.<br/>Thank You! */}
                                 
 
-                                Greetings! I'm Akshit Tomar, a B-Tech Computer Science student at Graphic Era University. In my 4th year, I've specialized in MERN stack development with CI/CD pipelines. Notably, I've creted my major project "Office-Boy" and delivered 8+ live projects using MERN and React JS. My proficiency extends to Azure DevOps and Azure Application Service. As an active problem solver on LeetCode, I excel in Data Structures and Algorithms using Java. Thank you!
+                                Greetings! I'm Akshit Tomar, a B-Tech Computer Science student at Graphic Era University. In my 4th year, I've specialized in MERN stack development with CI/CD pipelines. Notably, I've creted my major project "Office-Boy" and delivered 5+ live projects using MERN and React JS. My proficiency extends to Azure DevOps and Azure Application Service. As an active problem solver on LeetCode, I excel in Data Structures and Algorithms using Java. Thank you!
                             </p>
                         </div>
                         <div>
