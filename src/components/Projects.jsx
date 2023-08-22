@@ -55,7 +55,7 @@ const projects = [
         description: 'Elevating the future via my skills, impactful projects, and dynamic portfolio.',
         width:"65%",
         tag:"Frontend",
-        link:"akshit-tomar.azurewebsites.net"
+        link:"https://akshit-tomar.azurewebsites.net"
     },
     // Add more projects as needed
 ];
