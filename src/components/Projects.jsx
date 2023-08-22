@@ -5,6 +5,10 @@ import img3 from './membership.png'
 import img4 from './notesback.jpg'
 import img5 from './news.jpg'
 import img6 from './portfolio.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAward,faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faSquareGithub } from '@fortawesome/free-brands-svg-icons'
+
 import './pro.css'
 const images =[img,img2,img3,img4,img5,img6];
 const projects = [
@@ -68,7 +72,7 @@ const projects = [
 const Projects = () => {
     return (
         <div className="container pro" id='project'>
-            <h1 className="my-4">Live Deployed Projects <i className="fa-solid fa-award"></i></h1>
+            <h1 className="my-4">Live Deployed Projects <FontAwesomeIcon  icon={faAward}  /> </h1>
             <div className='row' style={{justifyContent:"space-between", alignItems:"center"}}>
             {projects.map((project, index) => (
                 <div className=" mb-4" key={index} style={{width:"39%"}}>
@@ -81,7 +85,10 @@ const Projects = () => {
                         />
                     </div>
                     <div className="col-md-10">
-                        <h6>{project.name} <a href={project.link}><i style={{color:"black"}} className={project.git==="true"?"fa-brands fa-square-github fa-beat":"fa-solid fa-sm fa-beat fa-arrow-up-right-from-square"}></i></a></h6>({project.tag})<br/><strong>Technologies Used:</strong>
+                        <h6>{project.name} <a href={project.link}>
+                             
+                             <FontAwesomeIcon icon={project.git==="true"?faSquareGithub:faUpRightFromSquare} beat  size='sm' color='black'/>
+                        </a></h6>({project.tag})<br/><strong>Technologies Used:</strong>
                         <ul className="list-inline">
                             {project.techniques.map((technique, index) => (
                                 <li key={index} className="list-inline-item">

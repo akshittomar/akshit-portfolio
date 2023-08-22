@@ -133,7 +133,9 @@
 import React, { useState, useEffect } from 'react';
 import video from '../pexels2.mp4';
 import './bg.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptop,faPalette,faSquareEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faMicrosoft,faReact,faNodeJs,faLinkedin,faSquareGithub,faInstagram} from '@fortawesome/free-brands-svg-icons'
 function Background() {
   const headings = [
     'MERN STACK DEVELOPER',
@@ -144,13 +146,13 @@ function Background() {
     'UI DESIGNER'
   ];
   const icons = [
-    "fa-solid fa-laptop ",
-    'fa-brands fa-microsoft ',
-    "fa-brands fa-react fa-spin ",
-    'fa-brands fa-microsoft ',
-    
-    "fa-brands fa-node-js ",
-    "fa-solid fa-palette",]
+    faLaptop,
+    faMicrosoft,
+    faReact,
+    faMicrosoft,
+    faNodeJs,
+    faPalette,
+    ]
 
 
   const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
@@ -187,10 +189,12 @@ function Background() {
                 className={currentHeadingIndex === index ? "fade-in-heading fa-fade" : "d-none"}
               >
                 {heading}&nbsp;
-                <i
+                {/* <i
                 style={{ color: "", opacity: currentHeadingIndex === index ? 1 : 0 }}
                 className={icons[index]}
-              ></i></h4>
+              ></i> */}
+              <FontAwesomeIcon icon={icons[index]}  spin={index===2} />
+              </h4>
             ))}
           </div>
           
@@ -199,15 +203,19 @@ function Background() {
         </div>
 
         <div style={{ display: "flex", cursor :"pointer"}}>
-        <a href="https://www.linkedin.com/in/akshit-tomar-7b6a77220/" className='' target="_blank" rel="noopener noreferrer" style={{color:"white"}}>
-        <i className="fa-brands fa-linkedin mx-3 fa-2xl"></i>
+        <a href="https://www.linkedin.com/in/akshit-tomar-7b6a77220/" className='mx-3' target="_blank"  rel="noopener noreferrer" style={{color:"white"}}>
+       <FontAwesomeIcon icon={faLinkedin} size='2xl'/>
       </a>
-      <a href="https://github.com/akshittomar" target="_blank" rel="noopener noreferrer" style={{color:"white"}}>
-          <i className="fa-brands  fa-square-github mx-3 fa-2xl"></i></a>
+      <a className='mx-3' href="https://github.com/akshittomar" target="_blank" rel="noopener noreferrer" style={{color:"white"}}> 
+         <FontAwesomeIcon icon={faSquareGithub} size='2xl'/> </a>
           
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{color:"white"}}><i className="fa-brands fa-instagram mx-3 fa-2xl"></i></a>
+          <a className='mx-3' href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{color:"white"}}>
+            <FontAwesomeIcon icon={faInstagram} size='2xl' />
+          </a>
 
-          <a href="mailto:akshitt125@gmail.com" target="_blank" rel="noopener noreferrer" style={{color:"white"}}><i className="fa-solid fa-square-envelope mx-3 fa-2xl"></i></a>
+          <a className='mx-3' href="mailto:akshitt125@gmail.com" target="_blank" rel="noopener noreferrer" style={{color:"white"}}>
+            <FontAwesomeIcon icon={faSquareEnvelope} size='2xl' />
+            </a>
           
         </div>
       </div>
