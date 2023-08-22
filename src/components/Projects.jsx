@@ -1,7 +1,12 @@
 import React from 'react';
 import img from './imgg.jpg'
-import img2 from './book.jpg'
+import img2 from './download5.png'
+import img3 from './membership.png'
+import img4 from './notesback.jpg'
+import img5 from './news.jpg'
+import img6 from './portfolio.jpg'
 import './pro.css'
+const images =[img,img2,img3,img4,img5,img6];
 const projects = [
     {
         name: 'Major Project: Office-Boy',
@@ -69,7 +74,7 @@ const Projects = () => {
                 <div className=" mb-4" key={index} style={{width:"39%"}}>
                     <div className=" d-flex align-items-center">
                         <img
-                            src={project.imageSrc}
+                            src={images[index]}
                             alt={`Project ${index + 1}`}
                             className=" img-fluid"
                             style={{ width: `${project.width}` }}
