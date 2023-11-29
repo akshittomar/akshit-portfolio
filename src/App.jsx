@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div style={{overflow:"hidden"}}>
     <Navbar></Navbar>
     
       <Background>
@@ -23,7 +23,7 @@ function App() {
       <Skills></Skills>
       <Projects></Projects>
       
-    </>
+    </div>
   )
 }
 
